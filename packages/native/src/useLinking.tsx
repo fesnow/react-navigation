@@ -601,8 +601,7 @@ export default function useLinking(
             // The navigation was interrupted
           }
         } else {
-          // If history length is unchanged, we want to replaceState
-          history.replace({ path, state });
+          history.push({ path, state });
         }
       } else {
         // If no common navigation state was found, assume it's a replace
